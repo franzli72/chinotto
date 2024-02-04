@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #272822; /* Terminal background color */
+  color: #f8f8f2; /* Text color */
+  font-family: "Courier New", monospace;
+}
+
+.terminal {
+  width: 800px;
+  height: 400px;
+  padding: 20px;
+  background-color: #1c1c1c; /* Terminal window background color */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Terminal window shadow */
+  max-width: 80%;
+  text-align: left; /* Align text to the left */
+}
+
+.blinking-cursor {
+  display: inline-block;
+  width: 8px; /* Adjust the width of the cursor */
+  height: 18px; /* Adjust the height of the cursor */
+  background-color: #f8f8f2; /* Cursor color */
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
